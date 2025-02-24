@@ -1,0 +1,25 @@
+{
+    "name": "qobuz/composer-config-handler",
+    "description": "A Composer script that handles configuration variables",
+    "keywords": ["configuration environment variable yaml"],
+    "homepage": "https://github.com/Qobuz/composer-config-handler",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eric Redon",
+            "email": "eric.redon@coox.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/yaml": "~2.0"
+    },
+    "require-dev": {
+        "composer/composer": "*"
+    },
+    "autoload": {
+        "psr-0": { "Qobuz": "" }
+    },
+    "bin": ["bin/qconf-exporter.php", "bin/launch-qconf-exporter.sh"]
+}
